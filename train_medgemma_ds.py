@@ -37,7 +37,7 @@ class CFG:
     out_dir       = "medgemma-4b-it-sft-lora-chest-ddp"
     seed          = 42
     epochs        = 2             # train for ≥2 epochs or use early‑stop
-    lr            = 2e‑4
+    lr            = 2e-4
     per_gpu_bs    = 2
     grad_accum    = 2
     lora_r        = 16
@@ -286,7 +286,7 @@ def main():
         logging_steps               = CFG.log_steps,
         save_strategy               = "steps",
         save_steps                  = CFG.save_steps,
-        evaluation_strategy         = "steps" if val_ds else "no",
+        eval_strategy         = "steps" if val_ds else "no",
         eval_steps                  = CFG.save_steps,
         optim                       = "adamw_torch_fused",
         warmup_ratio                = 0.03,
@@ -307,7 +307,6 @@ def main():
         train_dataset = train_ds,
         eval_dataset  = val_ds,
         data_collator = collate_fn,
-        tokenizer     = processor.tokenizer,
         callbacks     = callbacks,
     )
 

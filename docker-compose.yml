@@ -49,9 +49,10 @@ services:
     # ────────────────────────────────────────
     volumes:
       - .:${PROJECT_ROOT:-/opt/project}
-      - /BARO_Cluster/data/data:/data2          # read‑only data
-      - /home/data:/data
-      - /home/model:/model
+      - /BARO_Cluster/data/data:/data          # read‑only data
+      - /data2:/data2
+      - /model:/model
+      - /data3:/data3
 
     working_dir: ${PROJECT_ROOT:-/opt/project}
 

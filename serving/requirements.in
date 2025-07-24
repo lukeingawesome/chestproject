@@ -10,7 +10,7 @@ sentencepiece~=0.2.0
 # Medical imaging and data science packages
 monai
 nibabel
-wandb==0.20.1
+wandb
 
 # Data science helpers
 scikit-learn

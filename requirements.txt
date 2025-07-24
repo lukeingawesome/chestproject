@@ -1,1 +1,26 @@
--r serving/requirements.txt
+# CUDA 12.4 wheels come from NVIDIA's extra index; keep it at the top
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+triton==3.2.0
+
+transformers==4.53.1
+trl==0.9.3
+peft==0.15.2
+monai==1.5.0
+nibabel==5.3.2
+wandb==0.20.1
+
+# "data science" helpers
+scikit-learn
+pandas
+tqdm
+numpy
+matplotlib
+nltk
+
+# (Optional but often handy for HF fine‑tuning)
+accelerate
+datasets
+xformers 
