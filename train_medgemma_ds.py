@@ -37,7 +37,7 @@ class CFG:
     out_dir       = "medgemma-4b-it-sft-lora-chest-ddp"
     seed          = 42
     epochs        = 2             # train for ≥2 epochs or use early‑stop
-    lr            = 2e-4
+    lr            = 2e‑4
     per_gpu_bs    = 2
     grad_accum    = 2
     lora_r        = 16
