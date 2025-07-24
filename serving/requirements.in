@@ -7,6 +7,23 @@ pyyaml~=6.0.2
 transformers~=4.51.3
 sentencepiece~=0.2.0
 
+# Medical imaging and data science packages
+monai
+nibabel
+wandb==0.20.1
+
+# Data science helpers
+scikit-learn
+pandas
+tqdm
+matplotlib
+nltk
+
+# Optional but often handy for HF fine-tuning
+accelerate
+datasets
+xformers
+
 -r ../data_accessors/requirements.in
 -r serving_framework/requirements.in
 -r serving_framework/triton/requirements.in

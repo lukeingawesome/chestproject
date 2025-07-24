@@ -85,3 +85,4 @@ tests/fixtures/temp_*
 medgemma*
 .env
 nccl-tests
+medsiglip
