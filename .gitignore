@@ -1,0 +1,87 @@
+# Cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.cache/
+.pytest_cache/
+.coverage
+.tox/
+.env/
+
+# NPZ files (numpy compressed arrays)
+*.npz
+
+# CSV files (data files)
+*.csv
+
+# Jupyter notebook files
+!visualize.ipynb
+*.ipynb
+
+# Common additional ignores for data science projects
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.tmp
+*.temp
+
+
+# Model checkpoints and weights
+*.pth
+*.pt
+*.h5
+*.json
+*.pkl
+*.pickle
+!default_labels18.json
+# Data directories (uncomment if needed)
+# data/
+# datasets/
+# outputs/ 
+
+# All wandb files
+wandb/
+wandb/*
+# All tensorboard files
+tensorboard/
+
+# all runs
+runs/
+
+wandb/latest-run
+
+# Testing artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+.tox/
+test-requirements-installed.flag
+
+# CI/CD artifacts
+bandit-report.json
+benchmark-results.json
+.github/workflows/test-reports/
+
+# IDE test configurations
+.vscode/settings.json
+.idea/runConfigurations/
+
+# Performance test results
+.benchmarks/
+
+# Security scan results
+safety-report.json
+bandit-report.txt
+
+# Temporary test files
+tests/temp_*
+tests/fixtures/temp_*
+medgemma*
+.env
+nccl-tests
