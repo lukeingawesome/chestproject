@@ -14,7 +14,7 @@ A Docker-based development environment for chest foundation model training with 
 
 ```bash
 git clone https://github.com/lukeingawesome/chestproject.git
-cd base_env
+cd chestproject
 
 # Build and start the environment (automatically detects your user settings)
 make build
