@@ -35,7 +35,7 @@ services:
               capabilities: [gpu]
 
     environment:
-      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_VISIBLE_DEVICES: "4,5"
       NVIDIA_DRIVER_CAPABILITIES: compute,utility
       PYTHONUNBUFFERED: "1"
       NCCL_P2P_DISABLE: "1"
